@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Arvo', serif;
+    font-family: 'Dongle', sans-serif;
+}
+
+#main {
+    height: 100vh;
+    width: 100vw;
+    padding: 5px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    display: flex;
+
+}
+
+#sidebar {
+    padding: 20px 15px;
+    height: calc(100vh - 10px);
+    width: 250px;
+    background-color: #2864F5;
+    box-sizing: border-box;
+    border-radius: 30px 20px 20px 30px;
+    color: aliceblue;
+    position: relative;
+}
+
+#leftheading {
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(219, 219, 219, 0.451);
+    text-align: center;
+
+}
+
+#sidebar ul li {
+    position: relative;
+    list-style: none;
+    padding: 10px 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    font-size: 30px;
+    line-height: 30px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    overflow: hidden;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(219, 219, 219, 0.451);
+}
+
+#sidebar ul li::after {
+    content: "";
+    background: linear-gradient(120deg, #2bd5efb3 15%, #3bd7ef9e 22%, #4cdbf17f 30%, #59dfee4e 50%, #78def23b 72%, #78def21f 84%);
+    transform: translateX(-101%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 20px 0px 0px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 2s;
+}
+
+#sidebar ul li:hover::after {
+    content: "";
+    transform: translateX(0%);
+
+}
+
+#sidebar ul li span {
+    z-index: 2;
+    position: relative;
+}
+
+#leftbottom {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+}
+
+/* right css */
+#rigth {
+    padding: 2% 4%;
+    height: calc(100vh - 10px);
+    width: calc(100% - 250px);
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+#righthead {
+    height: 55px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid rgba(45, 45, 45, 0.555);
+}
+
+#righthead h1 {
+    font-size: 3rem;
+    line-height: 27px;
+}
+
+#righthead p {
+    font-size: 2rem;
+    line-height: 25px;
+    color: rgba(28, 28, 28, 0.814);
+
+}
+
+#rightbody {
+    width: 100%;
+    height: 92%;
+    padding: .5%;
+    overflow: scroll;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: inset 2px 2px 10px 2px rgba(0, 0, 0, 0.347);
+}
+
+#rightbody::-webkit-scrollbar {
+    display: none;
+}
+
+#rightbody p {
+    font-size: 1.5rem;
+    line-height: 20px;
+}
+
+#rightbody h1 {
+    margin-bottom: 15px;
+}
+
+/* sbko yhi krna hai */
+/* yad rkho sb section */
+
+#rightbody #Rhome,
+#Rcontact {
+    display: none;
+    width: 100%;
+    padding: 2px;
+    color: azure;
+    border: 1px solid rgba(52, 52, 52, 0.57);
+}
+
+/* sfszvfegeb sbvwesbwegwe*/
+/* vasva wehgwbwb wbw */
+
+
+
+#Rhomewall {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/660/984/1009/halloween-4k-best-for-desktop-background-wallpaper-preview.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    padding-bottom: 1px;
+    border: 1px solid rgba(52, 52, 52, 0.57);
+}
+
+#Rhomewall div {
+    width: 300px;
+    text-align: center;
+}
+
+.Rhbcontainer {
+    margin-top: 3px;
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: inset 2px 2px 10px 2px rgba(0, 0, 0, 0.352);
+    /* background-color: rgba(255, 158, 94, 0.219); */
+    /* background: rgb(255, 66, 66);
+    background: linear-gradient(148deg, rgba(255, 66, 66, 0.6) 6%, rgba(255, 118, 118, 0.58) 24%, rgba(251, 255, 67, 0.55) 47%, rgba(255, 158, 94, 0.52) 68%, rgba(255, 188, 61, 0.50) 94%, rgba(254, 187, 93, 0.48) 100%); */
+    /* background: rgb(92,44,143);
+background: linear-gradient(148deg, rgba(92,44,143,0.94) 20%, rgba(242,131,64,0.9360994397759104) 52%, rgba(111,121,176,0.9360994397759104) 67%, rgba(115,79,206,0.9360994397759104) 84%); */
+    background: rgb(92, 44, 143);
+    background: linear-gradient(148deg, rgba(92, 44, 143, 0.94) 20%, rgba(242, 131, 64, 0.9360994397759104) 52%, rgba(144, 71, 223, 0.9360994397759104) 72%, rgba(92, 44, 143, 0.94) 84%);
+
+
+}
+
+.Rhbcontainer>h1 {
+    color: black;
+}
+
+.Rhbcontainer>div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.rmHbox {
+    width: 300px;
+    /* height: 300px; */
+    padding: 50px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background-color: rgba(255, 111, 0, 0.692);
+    transition: all .5s;
+    position: relative;
+    overflow: hidden;
+}
+
+.rmHbox::before {
+    content: "";
+    width: 60px;
+    height: 130px;
+    background-color: #f2f528;
+    position: absolute;
+    left: -10px;
+    top: -40px;
+    transform: rotate(45deg);
+    transition: all .5s;
+}
+
+.rmHbox:hover::before {
+    content: "";
+    background-color: #2864F5 !important;
+
+}
+
+/* .rmHbox:hover::after {
+content: "";
+width: 20px;
+height: 20px;
+background-color: #2864F5;
+position: absolute;
+right: 15px;
+bottom: 15px;
+border-radius: 50%;
+transform: rotate(45deg); 
+} */
+
+.rmHbox:hover {
+    transform: translateY(-20px);
+    box-shadow: 2px 2px 20px 2px rgba(223, 222, 222, 0.352);
+}
+
+.rmHbox img {
+    width: 128px;
+    height: 128px;
+    margin-bottom: 10px;
+    transition: all .3s;
+}
+
+.rmHbox img:hover {
+    transform: scale(1.1);
+}
+
+/* contact page css */
+
+#Rcontact .Rcontactbox {
+    position: relative;
+    display: flex;
+    align-items: centers;
+    height: 81.2vh;
+    overflow: hidden;
+    background: rgb(255, 66, 66);
+    background: linear-gradient(148deg, rgba(255, 66, 66, 0.8) 6%, rgba(255, 118, 118, 0.78) 24%, rgba(251, 255, 67, 0.75) 47%, rgba(255, 158, 94, 0.72) 68%, rgba(255, 188, 61, 0.70) 94%, rgba(254, 187, 93, 0.68) 100%);
+}
+
+.RCdatacontainer {
+    position: relative;
+    margin: auto;
+    z-index: 2;
+    width: 100%;
+}
+
+.RCdata {
+    width: 35vw;
+    padding: 40px;
+}
+
+.RCdata p {
+    /* padding-top: 10px; */
+    font-size: large;
+}
+
+.RCdata #RCbtn {
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 2px 2px 10px 2px rgba(80, 80, 80, 0.558);
+    transition: all .5s ease;
+}
+
+#RCbtn:hover {
+    transform: scale(1.1);
+    background-color: #2864F5;
+    color: azure;
+    box-shadow: 2px 2px 10px 2px rgba(220, 220, 220, 0.558);
+}
+
+.RCphoto {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.RCphoto>* {
+    position: absolute;
+}
+
+#RCimg1 {
+    width: 80%;
+    max-width: 56.25rem;
+    right: -7vw;
+    bottom: -7vh;
+}
+
+#RCimg2 {
+    width: 70%;
+    max-width: 50rem;
+    bottom: -15vh;
+    right: -10vw;
+}
+
+
+
+/* hide back home page */
+#Rguid {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.pexels.com/photos/8834282/pexels-photo-8834282.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: contain;
+
+}
+
+#Rguid h1 {
+    font-size: 40px;
+}
+
+#Rguid li {
+    list-style: none;
+    font-size: 30px;
+}
